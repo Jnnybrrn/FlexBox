@@ -28,8 +28,10 @@ public class Type1 extends Box{
             basicCost = 0.59;
         else if (grade == 3)
             basicCost = 0.70;
-        else
+        else {
+            System.out.println("grade = " + grade);
             errorPrompt += "Incorrect grade.";
             printError();
         }
+    }
 }

@@ -18,9 +18,11 @@ public class Type345 extends Box {
         super(width, length, height, grade, colour, reinfBottom, reinfCorner, sealTop, quantity);
         addMod(15); //2 colours
         hasSealTop(sealTop);
-        basicCost(grade);
         reinfBot = reinfBottom;
         reinfCorn = reinfCorner;
+        hasRBot(reinfBot);
+        hasRCorn(reinfCorn);
+        basicCost(grade);
         
     }
     
@@ -43,6 +45,18 @@ public class Type345 extends Box {
         else {
             errorPrompt += "Incorrect grade.";
             printError();
+        }
+    }
+    
+    public void hasRBot(boolean reinfBot){
+        if (reinfBot){
+            addMod(12);
+        }
+    }
+    
+    public void hasRCorn(boolean reinfCorn){
+        if (reinfCorn){
+            addMod(8);
         }
     }
 }

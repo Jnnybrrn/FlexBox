@@ -29,10 +29,11 @@ public class Type2 extends Box {
             basicCost = 0.70;
         else if (grade == 4)
             basicCost = 0.92;
-        else
+        else {
             errorPrompt += "Incorrect grade.";
             printError();
         }
+     }
     
 
     

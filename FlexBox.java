@@ -26,6 +26,13 @@ public class FlexBox {
         System.out.println(box2.basicCost);
         System.out.println(box2.costMod);
         
+        Type345 box3 = new Type345(2, 4, 4, 3, 2, false, false, false, 1);
+        Type345 box4 = new Type345(2, 4, 4, 4, 2, true, false, true, 1);
+        Type345 box5 = new Type345(2, 4, 4, 2, 2, true, true, false, 1);
+        box3.printCost();
+        box4.printCost();
+        box5.printCost();
+        
         
     }
     
