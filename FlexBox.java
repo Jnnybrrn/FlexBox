@@ -33,6 +33,11 @@ public class FlexBox {
         box4.printCost();
         box5.printCost();
         
+        Interface window = new Interface();
+        window.setVisible(true);
+        window.jTextPane1.setText("Welcome to FlexBox! \n");
+                
+                
         
     }
     
